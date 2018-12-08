@@ -1,0 +1,19 @@
+{
+    "name": "Manifest Permissions",
+    "description": "http://stackoverflow.com/questions/14361061/extension-manifest-must-request-permission-to-access-this-host",
+    "version": "1",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+	"chrome_url_overrides": {
+   "newtab": "newtab.html"
+	},
+    "permissions": [
+	"activeTab",
+		"tabs",
+		"<all_urls>",
+		"notifications",
+		"https://www.google.com/_/chrome/newtab?rlz=1C1CHBF_enUS762US762&ie=UTF-8"
+    ]
+}
